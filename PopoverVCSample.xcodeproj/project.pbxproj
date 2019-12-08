@@ -12,6 +12,13 @@
 		C291BDC7239D53C700760577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C291BDC5239D53C700760577 /* Main.storyboard */; };
 		C291BDC9239D53C800760577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C291BDC8239D53C800760577 /* Assets.xcassets */; };
 		C291BDCC239D53C800760577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C291BDCA239D53C800760577 /* LaunchScreen.storyboard */; };
+		C291BDD5239D573900760577 /* BasePopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291BDD3239D573900760577 /* BasePopoverVC.swift */; };
+		C291BDD6239D573900760577 /* BasePopoverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C291BDD4239D573900760577 /* BasePopoverVC.xib */; };
+		C291BDD9239D58F000760577 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291BDD8239D58F000760577 /* UIView+Extension.swift */; };
+		C291BDDC239D69F700760577 /* RKRPointRankingInfoPopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291BDDA239D69F700760577 /* RKRPointRankingInfoPopoverVC.swift */; };
+		C291BDDD239D69F700760577 /* RKRPointRankingInfoPopoverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C291BDDB239D69F700760577 /* RKRPointRankingInfoPopoverVC.xib */; };
+		C291BDE2239D741600760577 /* PopoverInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291BDE0239D741600760577 /* PopoverInfoCell.swift */; };
+		C291BDE3239D741600760577 /* PopoverInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C291BDE1239D741600760577 /* PopoverInfoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		C291BDC8239D53C800760577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C291BDCB239D53C800760577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C291BDCD239D53C800760577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C291BDD3239D573900760577 /* BasePopoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePopoverVC.swift; sourceTree = "<group>"; };
+		C291BDD4239D573900760577 /* BasePopoverVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasePopoverVC.xib; sourceTree = "<group>"; };
+		C291BDD8239D58F000760577 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C291BDDA239D69F700760577 /* RKRPointRankingInfoPopoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKRPointRankingInfoPopoverVC.swift; sourceTree = "<group>"; };
+		C291BDDB239D69F700760577 /* RKRPointRankingInfoPopoverVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RKRPointRankingInfoPopoverVC.xib; sourceTree = "<group>"; };
+		C291BDE0239D741600760577 /* PopoverInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverInfoCell.swift; sourceTree = "<group>"; };
+		C291BDE1239D741600760577 /* PopoverInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverInfoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +70,43 @@
 			children = (
 				C291BDC1239D53C700760577 /* AppDelegate.swift */,
 				C291BDC3239D53C700760577 /* ViewController.swift */,
+				C291BDD8239D58F000760577 /* UIView+Extension.swift */,
+				C291BDD7239D574100760577 /* PopoverVC */,
 				C291BDC5239D53C700760577 /* Main.storyboard */,
 				C291BDC8239D53C800760577 /* Assets.xcassets */,
 				C291BDCA239D53C800760577 /* LaunchScreen.storyboard */,
 				C291BDCD239D53C800760577 /* Info.plist */,
 			);
 			path = PopoverVCSample;
+			sourceTree = "<group>";
+		};
+		C291BDD7239D574100760577 /* PopoverVC */ = {
+			isa = PBXGroup;
+			children = (
+				C291BDD3239D573900760577 /* BasePopoverVC.swift */,
+				C291BDD4239D573900760577 /* BasePopoverVC.xib */,
+				C291BDDE239D6B1400760577 /* RPointRankingInfoPopoverVC */,
+			);
+			path = PopoverVC;
+			sourceTree = "<group>";
+		};
+		C291BDDE239D6B1400760577 /* RPointRankingInfoPopoverVC */ = {
+			isa = PBXGroup;
+			children = (
+				C291BDDA239D69F700760577 /* RKRPointRankingInfoPopoverVC.swift */,
+				C291BDDB239D69F700760577 /* RKRPointRankingInfoPopoverVC.xib */,
+				C291BDDF239D73EF00760577 /* Cells */,
+			);
+			path = RPointRankingInfoPopoverVC;
+			sourceTree = "<group>";
+		};
+		C291BDDF239D73EF00760577 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C291BDE0239D741600760577 /* PopoverInfoCell.swift */,
+				C291BDE1239D741600760577 /* PopoverInfoCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +167,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C291BDDD239D69F700760577 /* RKRPointRankingInfoPopoverVC.xib in Resources */,
+				C291BDE3239D741600760577 /* PopoverInfoCell.xib in Resources */,
 				C291BDCC239D53C800760577 /* LaunchScreen.storyboard in Resources */,
+				C291BDD6239D573900760577 /* BasePopoverVC.xib in Resources */,
 				C291BDC9239D53C800760577 /* Assets.xcassets in Resources */,
 				C291BDC7239D53C700760577 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C291BDDC239D69F700760577 /* RKRPointRankingInfoPopoverVC.swift in Sources */,
+				C291BDE2239D741600760577 /* PopoverInfoCell.swift in Sources */,
+				C291BDD5239D573900760577 /* BasePopoverVC.swift in Sources */,
 				C291BDC4239D53C700760577 /* ViewController.swift in Sources */,
+				C291BDD9239D58F000760577 /* UIView+Extension.swift in Sources */,
 				C291BDC2239D53C700760577 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
